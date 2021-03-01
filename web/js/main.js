@@ -476,31 +476,31 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     1000: {
       records: '15',
-      title: 'Внесение данных о Вашем здоровье профессиональным ассистентом',
+      title: 'Сбор и внесение данных о Вашем здоровье профессиональным ассистентом',
       second: 'Рекомендуем на начальном этапе использования ЭМК',
       aletText: 'Количество записей внесенных самостоятельно не ограничено'
     },
     2000: {
       records: '35',
-      title: 'Внесение данных о Вашем здоровье профессиональным ассистентом',
+      title: 'Сбор и внесение данных о Вашем здоровье профессиональным ассистентом',
       second: 'Рекомендуем на начальном этапе использования ЭМК',
       aletText: 'Количество записей внесенных самостоятельно не ограничено'
     },
     3000: {
       records: '60',
-      title: 'Внесение данных о Вашем здоровье профессиональным ассистентом',
+      title: 'Сбор и внесение данных о Вашем здоровье профессиональным ассистентом',
       second: 'Рекомендуем на начальном этапе использования ЭМК',
       aletText: 'Количество записей внесенных самостоятельно не ограничено'
     },
     4000: {
       records: '85',
-      title: 'Внесение данных о Вашем здоровье профессиональным ассистентом',
+      title: 'Сбор и внесение данных о Вашем здоровье профессиональным ассистентом',
       second: 'Рекомендуем на начальном этапе использования ЭМК',
       aletText: 'Количество записей внесенных самостоятельно не ограничено'
     },
     5000: {
       records: 'не ограничено',
-      title: 'Внесение данных о Вашем здоровье профессиональным ассистентом',
+      title: 'Сбор и внесение данных о Вашем здоровье профессиональным ассистентом',
       second: 'Соберем и внесем в ЭМК всю историю Вашего здоровья',
       aletText: ''
     }
@@ -573,8 +573,17 @@ document.addEventListener('DOMContentLoaded', function () {
   document.addEventListener('click', function (e) {
     if (e.target.closest('[data-btn-modal]')) {
       e.preventDefault();
-      var datTarget = e.target.closest('[data-btn-modal]').dataset.btnModal;
+      var datTarget = e.target.closest('[data-btn-modal]').dataset.btnModal; // Прости за это. Передаю в модалку текст и проверяю на букву в тексте. 
+
       var rr = document.querySelector('.calculator__title').innerHTML;
+      var textBtnModal;
+
+      if (rr[1] == 'б') {
+        textBtnModal = 'Заказать';
+      } else {
+        textBtnModal = 'Оплатить';
+      } // Конец.
+
 
       switch (datTarget) {
         case 'login':
@@ -660,7 +669,7 @@ document.addEventListener('DOMContentLoaded', function () {
             closable: true,
             width: '600px',
             bodyClass: 'vmodal__body--p',
-            content: $globalHtmlElements.createModalBuyCard(calcInputPrice.value, calcInputMaking.value, rr)
+            content: $globalHtmlElements.createModalBuyCard(calcInputPrice.value, calcInputMaking.value, rr, textBtnModal)
           });
           setTimeout(function () {
             return modalElem.open();

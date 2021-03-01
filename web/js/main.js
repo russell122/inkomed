@@ -574,6 +574,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (e.target.closest('[data-btn-modal]')) {
       e.preventDefault();
       var datTarget = e.target.closest('[data-btn-modal]').dataset.btnModal;
+      var rr = document.querySelector('.calculator__title').innerHTML;
 
       switch (datTarget) {
         case 'login':
@@ -659,7 +660,7 @@ document.addEventListener('DOMContentLoaded', function () {
             closable: true,
             width: '600px',
             bodyClass: 'vmodal__body--p',
-            content: $globalHtmlElements.createModalBuyCard(calcInputPrice.value, calcInputMaking.value)
+            content: $globalHtmlElements.createModalBuyCard(calcInputPrice.value, calcInputMaking.value, rr)
           });
           setTimeout(function () {
             return modalElem.open();

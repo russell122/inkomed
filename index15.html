@@ -4,7 +4,7 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Страница 12</title><!--[if IE]>
+    <title>Страница 15</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
@@ -32,8 +32,10 @@
         <div class="container"> 
           <div class="lc__wrap"> 
             <ul class="lc__menu"> 
-              <li><a href="index11.html">Личные данные</a></li>
-              <li class="active"> <a href="index12.html">Мои услуги</a></li>
+              <li><a href="index13.html">Заявки</a></li>
+              <li><a href="index14.html">Клиенты</a></li>
+              <li class="active"> <a href="index15.html">Услуги</a></li>
+              <li> <a href="index16.html">Отзывы</a></li>
             </ul>
             <div class="lc__user">
               <div class="header__auth"><a href="#"> 
@@ -48,140 +50,87 @@
             </div>
           </div>
           <div class="lc__title">
-            <h2 class="g-title">Мои услуги</h2>
+            <h2 class="g-title">Услуги</h2>
           </div>
         </div>
-        <section class="myServices my-g-section">
+        <section class="applications my-g-section">
           <div class="container">
             <form class="myServices__top">
-              <h5 class="g-title">Фильтр услуг </h5>
               <div class="myServices__top-wrap">
+                <label class="label label-fio">
+                  <input type="text" placeholder="ФИО">
+                </label>
                 <label class="label">
                   <select>
-                    <option>Организация МП</option>
+                    <option>Статус</option>
                     <option>Lorem 1</option>
                     <option>Lorem 2</option>
                   </select>
                 </label>
                 <label class="label">
                   <select>
-                    <option>Новая услуга</option>
+                    <option>Оплата</option>
                     <option>Lorem 1</option>
                     <option>Lorem 2</option>
                   </select>
                 </label>
-                <div class="myCheckBox"> 
-                  <input class="custom-checkbox" type="checkbox" id="check1" checked>
-                  <label for="check1">Ожидают оплату<br> или требуют продления</label>
+                <label class="label">
+                  <select>
+                    <option>Тип услуги</option>
+                    <option>Lorem 1</option>
+                    <option>Lorem 2</option>
+                  </select>
+                </label>
+                <div class="myServices__top-wrapBtns">
+                  <button class="g-btn">Поиск</button>
                 </div>
-                <button class="g-btn">Найти</button>
               </div>
             </form>
+            <div class="applications__subtitle">
+              <h2 class="g-title">Услуги клиента</h2>
+            </div>
             <form class="myServices__elem">
               <div class="myServices__elem-status created">Статус: создана</div>
               <div class="myServices__elem-wrap"> 
-                <div class="myServices__elem-left">
+                <div class="myServices__elem-left myServices__elem-ind">
                   <div class="myServices__elem-left-icon">
                     <div class="myServices__elem-left-el"> 
                       <svg class="svg-sprite-icon icon-1">
                         <use xlink:href="web/images/sprite/symbol/sprite.svg#1"></use>
                       </svg>
                     </div>
-                    <h6 class="g-title">Первичный прием<br>врача-терапевта</h6>
+                    <h6 class="g-title">Прием врача</h6>
                   </div>
                   <div class="myServices__elem-right-small">
                     <h4 class="g-title rub">1100</h4><span>Оплатить до 14.12.2020</span>
-                    <button class="g-btn g-btn--accent">Оплатить</button>
+                    <button class="g-btn">Редакитировать</button>
                   </div>
                 </div>
-                <div class="myServices__elem-center">
+                <div class="myServices__elem-center myServices__elem-ind">
                   <div class="myServices__elem-center-el"><img class="img" src="./web/images/content/myServices/doc.png" alt=""></div>
                   <div class="myServices__elem-center-body">
                     <h6 class="g-title">Иванова Татьяна Владимировна</h6>
                     <p>Специализация: <span> акушер, гинеколог, высшая категория</span></p>
                     <p>Клиника: <span> Сова</span></p>
-                    <p>Стаж работы: <span> 17 лет</span></p>
                     <p>Адрес: <span> ул. Платонова, д. 18</span></p>
-                    <p>Комментрий: <span> Мы делаем современную медицину доступной каждому: ведем электронные медицинские карты, организуем и сопровождаем лечение, подбираем </span></p>
                     <p>Дата приема: <span class="bold"> 15.12.2020</span></p>
+                    <p>Время приема: <span class="bold"> 12:00</span></p>
                   </div>
                 </div>
-                <div class="myServices__elem-right">
+                <div class="myServices__elem-client myServices__elem-ind"> 
+                  <h6 class="g-title">Клиент</h6><span class="g-bold">Иванов Иван Иванович</span>
+                  <p>21.04.2021</p>
+                </div>
+                <div class="myServices__elem-right myServices__elem-ind">
                   <h4 class="g-title rub">1100</h4><span>Оплатить до 14.12.2020</span>
-                  <button class="g-btn g-btn--accent">Оплатить</button>
+                  <button class="g-btn">Редакитировать</button>
                 </div>
               </div>
             </form>
             <form class="myServices__elem">
-              <div class="myServices__elem-status work">Статус:  в работе</div>
+              <div class="myServices__elem-status cancellation">Статус: отмена</div>
               <div class="myServices__elem-wrap"> 
-                <div class="myServices__elem-left">
-                  <div class="myServices__elem-left-icon">
-                    <div class="myServices__elem-left-el"> 
-                      <svg class="svg-sprite-icon icon-2">
-                        <use xlink:href="web/images/sprite/symbol/sprite.svg#2"></use>
-                      </svg>
-                    </div>
-                    <h6 class="g-title">Электронная<br>медицинская карта </h6>
-                  </div>
-                  <div class="myServices__elem-right-small">
-                    <h4 class="g-title rub">1100</h4><span>Оплатить до 14.12.2020</span>
-                    <button class="g-btn g-btn--accent">Оплатить</button>
-                  </div>
-                </div>
-                <div class="myServices__elem-center">
-                  <div class="myServices__elem-center-el"><span>Базовый</span></div>
-                  <div class="myServices__elem-center-body">
-                    <h6 class="g-title">Тариф Базовый</h6>
-                    <p> <span> Самостоятельное внесение данных</span></p>
-                    <p>Тариф: <span> базовый</span></p>
-                    <p>Количество записей: <span> 50</span></p>
-                    <p>Дата: <span class="bold"> 15.12.2020</span></p>
-                  </div>
-                </div>
-                <div class="myServices__elem-right">
-                  <h4 class="g-title rub">1100</h4><span>Оплатить до 14.12.2020</span>
-                  <button class="g-btn g-btn--accent">Оплатить</button>
-                </div>
-              </div>
-            </form>
-            <form class="myServices__elem">
-              <div class="myServices__elem-status completed">Статус: оказана</div>
-              <div class="myServices__elem-wrap"> 
-                <div class="myServices__elem-left">
-                  <div class="myServices__elem-left-icon">
-                    <div class="myServices__elem-left-el"> 
-                      <svg class="svg-sprite-icon icon-3">
-                        <use xlink:href="web/images/sprite/symbol/sprite.svg#3"></use>
-                      </svg>
-                    </div>
-                    <h6 class="g-title">Организация<br>медицинской помощи</h6>
-                  </div>
-                  <div class="myServices__elem-right-small">
-                    <h4 class="g-title rub">1100</h4>
-                    <button class="g-btn g-btn--white">Написать отзыв</button>
-                  </div>
-                </div>
-                <div class="myServices__elem-center">
-                  <div class="myServices__elem-center-el"><img class="img" src="./web/images/content/myServices/doc.png" alt=""></div>
-                  <div class="myServices__elem-center-body">
-                    <h6 class="g-title">Иванова Татьяна Владимировна</h6>
-                    <p>
-                      Клиника:  <span> Эвкалипт</span></p>
-                    <p>Комментрий:<span>  Лечение в стационаре 7 дней.</span></p>
-                    <p>Дата приема: <span class="bold"> 15.12.2020</span></p>
-                  </div>
-                </div>
-                <div class="myServices__elem-right">
-                  <h4 class="g-title rub">10 000</h4>
-                  <button class="g-btn g-btn--white">Написать отзыв</button>
-                </div>
-              </div>
-            </form>
-            <form class="myServices__elem">
-              <div class="myServices__elem-status completed">Статус: оказана</div>
-              <div class="myServices__elem-wrap"> 
-                <div class="myServices__elem-left">
+                <div class="myServices__elem-left myServices__elem-ind">
                   <div class="myServices__elem-left-icon">
                     <div class="myServices__elem-left-el"> 
                       <svg class="svg-sprite-icon icon-4">
@@ -192,59 +141,67 @@
                   </div>
                   <div class="myServices__elem-right-small">
                     <h4 class="g-title rub">1100</h4>
-                    <button class="g-btn g-btn--white">Написать отзыв</button>
+                    <button class="g-btn">Редакитировать</button>
                   </div>
                 </div>
-                <div class="myServices__elem-center">
+                <div class="myServices__elem-center myServices__elem-ind">
                   <div class="myServices__elem-center-el"><img class="img" src="./web/images/content/modal-hot.jpg" alt=""></div>
                   <div class="myServices__elem-center-body">
                     <h6 class="g-title">ЛОК “Солнечная”</h6>
-                    <p>
-                      Специализация:  <span>лечение сердечно-сосудистых заболеваний</span></p>
                     <p>Адрес:<span> Краснодарский край, г. Геленджик, ул. Туристическая, 19</span></p>
                     <p>Дата въезда: <span class="bold"> 15.12.2020</span></p>
-                    <p>Комментрий:<span> Заезд 14.00, выезд 12.00</span></p>
+                    <p>Дата выезда: <span class="bold"> 20.12.2020</span></p>
+                    <p>Номер:<span> Трехместный люкс</span></p>
                     <p>Количество взрослых:<span> 2</span></p>
                     <p>Количество детей:<span> 1</span></p>
-                    <div class="myServices__elem-center-variab"><a href="#">Варианты питания</a><a href="#">Варианты размещения</a><a href="#">Варианты лечения</a><a href="#">Варианты номера</a></div>
+                    <p>Возраст детей:<span> 1, 5</span></p>
+                    <p>Питание:<span> Завтрак и ужин</span></p>
+                    <p>Лечение:<span> Программа реабилитации</span></p>
+                    <p>Комментрий:<span> Мы делаем современную медицину доступной каждому: ведем электронные медицинские</span></p>
                   </div>
                 </div>
-                <div class="myServices__elem-right">
+                <div class="myServices__elem-client myServices__elem-ind"> 
+                  <h6 class="g-title">Клиент</h6><span class="g-bold">Иванов Иван Иванович</span>
+                  <p>21.04.2021</p>
+                </div>
+                <div class="myServices__elem-right myServices__elem-ind">
                   <h4 class="g-title rub">1100</h4>
-                  <button class="g-btn g-btn--white">Написать отзыв</button>
+                  <button class="g-btn">Редакитировать</button>
                 </div>
               </div>
             </form>
             <form class="myServices__elem">
-              <div class="myServices__elem-status cancellation">Статус: отмена</div>
+              <div class="myServices__elem-status completed">Статус: оказана</div>
               <div class="myServices__elem-wrap"> 
-                <div class="myServices__elem-left">
+                <div class="myServices__elem-left myServices__elem-ind">
                   <div class="myServices__elem-left-icon">
                     <div class="myServices__elem-left-el"> 
                       <svg class="svg-sprite-icon icon-5">
                         <use xlink:href="web/images/sprite/symbol/sprite.svg#5"></use>
                       </svg>
                     </div>
-                    <h6 class="g-title">Организация медицинской <br> помощи</h6>
+                    <h6 class="g-title">Экспертиза качества<br>медицинской помощи</h6>
                   </div>
                   <div class="myServices__elem-right-small">
                     <h4 class="g-title rub">1100</h4>
-                    <button class="g-btn g-btn--white">Написать отзыв</button>
+                    <button class="g-btn">Редакитировать</button>
                   </div>
                 </div>
-                <div class="myServices__elem-center">
+                <div class="myServices__elem-center myServices__elem-ind">
                   <div class="myServices__elem-center-el"><img class="img" src="./web/images/content/myServices/doc.png" alt=""></div>
                   <div class="myServices__elem-center-body">
                     <h6 class="g-title">Иванова Татьяна Владимировна</h6>
-                    <p>
-                      Специализация: <span>акушер, гинеколог, высшая категория</span></p>
-                    <p>Ваш комментрий:<span> Мы делаем современную медицину доступной каждому: ведем электронные медицинские карты, организуем и сопровождаем лечение, подбираем</span></p>
+                    <p>Комментрий:<span>  Проведение экспертных мероприятий, участие в судебном заседании. </span></p>
                     <p>Дата приема: <span class="bold"> 15.12.2020</span></p>
                   </div>
                 </div>
-                <div class="myServices__elem-right">
+                <div class="myServices__elem-client myServices__elem-ind"> 
+                  <h6 class="g-title">Клиент</h6><span class="g-bold">Иванов Иван Иванович</span>
+                  <p>21.04.2021</p>
+                </div>
+                <div class="myServices__elem-right myServices__elem-ind">
                   <h4 class="g-title rub">1100</h4>
-                  <button class="g-btn g-btn--white">Написать отзыв</button>
+                  <button class="g-btn">Редакитировать</button>
                 </div>
               </div>
             </form>

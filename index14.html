@@ -61,7 +61,7 @@
                   <input type="text" placeholder="Поиск по ФИО, Email, телефон">
                 </label>
                 <div class="myServices__top-wrapBtns">
-                  <button class="g-btn">Поиск</button><a class="g-btn" href="#">Создать клиента</a>
+                  <button class="g-btn">Поиск</button><a class="g-btn" href="#" data-btn-modal="creatingClient">Создать клиента</a>
                 </div>
               </div>
             </form>
@@ -81,85 +81,125 @@
                 <tbody>
                   <tr>
                     <td aria-label="#">1</td>
-                    <td aria-label="ФИО"><a class="g-table-big__link" href="#">Иванов Иван Иванович</a></td>
+                    <td aria-label="ФИО"><a class="g-table-big__link" href="#" data-btn-modal="creatingClient">Иванов Иван Иванович</a></td>
                     <td aria-label="Дата рождения">01.01.1990</td>
                     <td aria-label="Контакты">
                       <div class="g-table-big1__soc"> <a href="tel:8 952 420-22-42">8 952 420-22-42</a><a href="mailto:ivanov@mail.ru">ivanov@mail.ru</a></div>
                     </td>
-                    <td aria-label="#"><a class="g-table-big__link" href="#">2</a></td>
-                    <td aria-label="Добавить услугу"><a class="g-table-big1__services" href="#"><span>Выбор услуги</span>
-                        <svg class="svg-sprite-icon icon-down-arrow">
-                          <use xlink:href="web/images/sprite/symbol/sprite.svg#down-arrow"></use>
-                        </svg></a></td>
-                    <td aria-label=""><a class="g-table-big1__plus" href="#"> 
+                    <td aria-label="#"><a class="g-table-big__link" href="index15.html">2</a></td>
+                    <td aria-label="Добавить услугу">
+                      <label class="label myServiceTypeChange" data-selectNumber="0">
+                        <select>
+                          <option disabled="disabled">Тип услуги</option>
+                          <option value="1">ЭМК</option>
+                          <option value="2">Подбор врача</option>
+                          <option value="3">Организация МП</option>
+                          <option value="4">СКЛ</option>
+                          <option value="5">ЭКМП</option>
+                        </select>
+                      </label>
+                    </td>
+                    <td aria-label=""><a class="g-table-big1__plus" href="#" data-btn-modal="" data-btnNumber="0"> 
                         <svg class="svg-sprite-icon icon-plus2">
                           <use xlink:href="web/images/sprite/symbol/sprite.svg#plus2"></use>
                         </svg></a></td>
                   </tr>
                   <tr>
                     <td aria-label="#">2</td>
-                    <td aria-label="ФИО"><a class="g-table-big__link" href="#">Иванов Иван Иванович</a></td>
+                    <td aria-label="ФИО"><a class="g-table-big__link" href="#" data-btn-modal="creatingClient">Иванов Иван Иванович</a></td>
                     <td aria-label="Дата рождения">01.01.1990</td>
                     <td aria-label="Контакты">
                       <div class="g-table-big1__soc"> <a href="tel:8 952 420-22-42">8 952 420-22-42</a><a href="mailto:ivanov@mail.ru">ivanov@mail.ru</a></div>
                     </td>
-                    <td aria-label="#"><a class="g-table-big__link" href="#">3</a></td>
-                    <td aria-label="Добавить услугу"><a class="g-table-big1__services" href="#"><span>Выбор услуги</span>
-                        <svg class="svg-sprite-icon icon-down-arrow">
-                          <use xlink:href="web/images/sprite/symbol/sprite.svg#down-arrow"></use>
-                        </svg></a></td>
-                    <td aria-label=""><a class="g-table-big1__plus" href="#"> 
+                    <td aria-label="#"><a class="g-table-big__link" href="index15.html">3</a></td>
+                    <td aria-label="Добавить услугу">
+                      <label class="label myServiceTypeChange" data-selectNumber="1">
+                        <select>
+                          <option disabled="disabled">Тип услуги</option>
+                          <option value="1">ЭМК</option>
+                          <option value="2">Подбор врача</option>
+                          <option value="3">Организация МП</option>
+                          <option value="4">СКЛ</option>
+                          <option value="5">ЭКМП</option>
+                        </select>
+                      </label>
+                    </td>
+                    <td aria-label=""><a class="g-table-big1__plus" href="#" data-btn-modal="" data-btnNumber="1"> 
                         <svg class="svg-sprite-icon icon-plus2">
                           <use xlink:href="web/images/sprite/symbol/sprite.svg#plus2"></use>
                         </svg></a></td>
                   </tr>
                   <tr>
                     <td aria-label="#">3</td>
-                    <td aria-label="ФИО"><a class="g-table-big__link" href="#">Иванов Иван Иванович</a></td>
+                    <td aria-label="ФИО"><a class="g-table-big__link" href="#" data-btn-modal="creatingClient">Иванов Иван Иванович</a></td>
                     <td aria-label="Дата рождения">01.01.1990</td>
                     <td aria-label="Контакты">
                       <div class="g-table-big1__soc"> <a href="tel:8 952 420-22-42">8 952 420-22-42</a><a href="mailto:ivanov@mail.ru">ivanov@mail.ru</a></div>
                     </td>
-                    <td aria-label="#"><a class="g-table-big__link" href="#">4</a></td>
-                    <td aria-label="Добавить услугу"><a class="g-table-big1__services" href="#"><span>Выбор услуги</span>
-                        <svg class="svg-sprite-icon icon-down-arrow">
-                          <use xlink:href="web/images/sprite/symbol/sprite.svg#down-arrow"></use>
-                        </svg></a></td>
-                    <td aria-label=""><a class="g-table-big1__plus" href="#"> 
+                    <td aria-label="#"><a class="g-table-big__link" href="index15.html">4</a></td>
+                    <td aria-label="Добавить услугу">
+                      <label class="label myServiceTypeChange" data-selectNumber="2">
+                        <select>
+                          <option disabled="disabled">Тип услуги</option>
+                          <option value="1">ЭМК</option>
+                          <option value="2">Подбор врача</option>
+                          <option value="3">Организация МП</option>
+                          <option value="4">СКЛ</option>
+                          <option value="5">ЭКМП</option>
+                        </select>
+                      </label>
+                    </td>
+                    <td aria-label=""><a class="g-table-big1__plus" href="#" data-btn-modal="" data-btnNumber="2"> 
                         <svg class="svg-sprite-icon icon-plus2">
                           <use xlink:href="web/images/sprite/symbol/sprite.svg#plus2"></use>
                         </svg></a></td>
                   </tr>
                   <tr>
                     <td aria-label="#">4</td>
-                    <td aria-label="ФИО"><a class="g-table-big__link" href="#">Иванов Иван Иванович</a></td>
+                    <td aria-label="ФИО"><a class="g-table-big__link" href="#" data-btn-modal="creatingClient">Иванов Иван Иванович</a></td>
                     <td aria-label="Дата рождения">01.01.1990</td>
                     <td aria-label="Контакты">
                       <div class="g-table-big1__soc"> <a href="tel:8 952 420-22-42">8 952 420-22-42</a><a href="mailto:ivanov@mail.ru">ivanov@mail.ru</a></div>
                     </td>
-                    <td aria-label="#"><a class="g-table-big__link" href="#">5</a></td>
-                    <td aria-label="Добавить услугу"><a class="g-table-big1__services" href="#"><span>Выбор услуги</span>
-                        <svg class="svg-sprite-icon icon-down-arrow">
-                          <use xlink:href="web/images/sprite/symbol/sprite.svg#down-arrow"></use>
-                        </svg></a></td>
-                    <td aria-label=""><a class="g-table-big1__plus" href="#"> 
+                    <td aria-label="#"><a class="g-table-big__link" href="index15.html">5</a></td>
+                    <td aria-label="Добавить услугу">
+                      <label class="label myServiceTypeChange" data-selectNumber="3">
+                        <select>
+                          <option disabled="disabled">Тип услуги</option>
+                          <option value="1">ЭМК</option>
+                          <option value="2">Подбор врача</option>
+                          <option value="3">Организация МП</option>
+                          <option value="4">СКЛ</option>
+                          <option value="5">ЭКМП</option>
+                        </select>
+                      </label>
+                    </td>
+                    <td aria-label=""><a class="g-table-big1__plus" href="#" data-btn-modal="" data-btnNumber="3"> 
                         <svg class="svg-sprite-icon icon-plus2">
                           <use xlink:href="web/images/sprite/symbol/sprite.svg#plus2"></use>
                         </svg></a></td>
                   </tr>
                   <tr>
                     <td aria-label="#">5</td>
-                    <td aria-label="ФИО"><a class="g-table-big__link" href="#">Иванов Иван Иванович</a></td>
+                    <td aria-label="ФИО"><a class="g-table-big__link" href="#" data-btn-modal="creatingClient">Иванов Иван Иванович</a></td>
                     <td aria-label="Дата рождения">01.01.1990</td>
                     <td aria-label="Контакты">
                       <div class="g-table-big1__soc"> <a href="tel:8 952 420-22-42">8 952 420-22-42</a><a href="mailto:ivanov@mail.ru">ivanov@mail.ru</a></div>
                     </td>
-                    <td aria-label="#"><a class="g-table-big__link" href="#">6</a></td>
-                    <td aria-label="Добавить услугу"><a class="g-table-big1__services" href="#"><span>Выбор услуги</span>
-                        <svg class="svg-sprite-icon icon-down-arrow">
-                          <use xlink:href="web/images/sprite/symbol/sprite.svg#down-arrow"></use>
-                        </svg></a></td>
-                    <td aria-label=""><a class="g-table-big1__plus" href="#"> 
+                    <td aria-label="#"><a class="g-table-big__link" href="index15.html">6</a></td>
+                    <td aria-label="Добавить услугу">
+                      <label class="label myServiceTypeChange" data-selectNumber="4">
+                        <select>
+                          <option disabled="disabled">Тип услуги</option>
+                          <option value="1">ЭМК</option>
+                          <option value="2">Подбор врача</option>
+                          <option value="3">Организация МП</option>
+                          <option value="4">СКЛ</option>
+                          <option value="5">ЭКМП</option>
+                        </select>
+                      </label>
+                    </td>
+                    <td aria-label=""><a class="g-table-big1__plus" href="#" data-btn-modal="" data-btnNumber="4"> 
                         <svg class="svg-sprite-icon icon-plus2">
                           <use xlink:href="web/images/sprite/symbol/sprite.svg#plus2"></use>
                         </svg></a></td>
@@ -167,113 +207,6 @@
                 </tbody>
               </table>
             </div>
-            <div class="applications__subtitle">
-              <h2 class="g-title">Услуги клиента</h2>
-            </div>
-            <form class="myServices__elem">
-              <div class="myServices__elem-status created">Статус: создана</div>
-              <div class="myServices__elem-wrap"> 
-                <div class="myServices__elem-left">
-                  <div class="myServices__elem-left-icon">
-                    <div class="myServices__elem-left-el"> 
-                      <svg class="svg-sprite-icon icon-1">
-                        <use xlink:href="web/images/sprite/symbol/sprite.svg#1"></use>
-                      </svg>
-                    </div>
-                    <h6 class="g-title">Прием врача</h6>
-                  </div>
-                  <div class="myServices__elem-right-small">
-                    <h4 class="g-title rub">1100</h4><span>Оплатить до 14.12.2020</span>
-                    <button class="g-btn">Редакитировать</button>
-                  </div>
-                </div>
-                <div class="myServices__elem-center">
-                  <div class="myServices__elem-center-el"><img class="img" src="./web/images/content/myServices/doc.png" alt=""></div>
-                  <div class="myServices__elem-center-body">
-                    <h6 class="g-title">Иванова Татьяна Владимировна</h6>
-                    <p>Специализация: <span> акушер, гинеколог, высшая категория</span></p>
-                    <p>Клиника: <span> Сова</span></p>
-                    <p>Адрес: <span> ул. Платонова, д. 18</span></p>
-                    <p>Дата приема: <span class="bold"> 15.12.2020</span></p>
-                    <p>Время приема: <span class="bold"> 12:00</span></p>
-                  </div>
-                </div>
-                <div class="myServices__elem-right">
-                  <h4 class="g-title rub">1100</h4><span>Оплатить до 14.12.2020</span>
-                  <button class="g-btn">Редакитировать</button>
-                </div>
-              </div>
-            </form>
-            <form class="myServices__elem">
-              <div class="myServices__elem-status cancellation">Статус: отмена</div>
-              <div class="myServices__elem-wrap"> 
-                <div class="myServices__elem-left">
-                  <div class="myServices__elem-left-icon">
-                    <div class="myServices__elem-left-el"> 
-                      <svg class="svg-sprite-icon icon-4">
-                        <use xlink:href="web/images/sprite/symbol/sprite.svg#4"></use>
-                      </svg>
-                    </div>
-                    <h6 class="g-title">Организация <br> санаторно-курортного<br>лечения</h6>
-                  </div>
-                  <div class="myServices__elem-right-small">
-                    <h4 class="g-title rub">1100</h4>
-                    <button class="g-btn">Редакитировать</button>
-                  </div>
-                </div>
-                <div class="myServices__elem-center">
-                  <div class="myServices__elem-center-el"><img class="img" src="./web/images/content/modal-hot.jpg" alt=""></div>
-                  <div class="myServices__elem-center-body">
-                    <h6 class="g-title">ЛОК “Солнечная”</h6>
-                    <p>Адрес:<span> Краснодарский край, г. Геленджик, ул. Туристическая, 19</span></p>
-                    <p>Дата въезда: <span class="bold"> 15.12.2020</span></p>
-                    <p>Дата выезда: <span class="bold"> 20.12.2020</span></p>
-                    <p>Номер:<span> Трехместный люкс</span></p>
-                    <p>Количество взрослых:<span> 2</span></p>
-                    <p>Количество детей:<span> 1</span></p>
-                    <p>Возраст детей:<span> 1, 5</span></p>
-                    <p>Питание:<span> Завтрак и ужин</span></p>
-                    <p>Лечение:<span> Программа реабилитации</span></p>
-                    <p>Комментрий:<span> Мы делаем современную медицину доступной каждому: ведем электронные медицинские</span></p>
-                  </div>
-                </div>
-                <div class="myServices__elem-right">
-                  <h4 class="g-title rub">1100</h4>
-                  <button class="g-btn">Редакитировать</button>
-                </div>
-              </div>
-            </form>
-            <form class="myServices__elem">
-              <div class="myServices__elem-status completed">Статус: оказана</div>
-              <div class="myServices__elem-wrap"> 
-                <div class="myServices__elem-left">
-                  <div class="myServices__elem-left-icon">
-                    <div class="myServices__elem-left-el"> 
-                      <svg class="svg-sprite-icon icon-5">
-                        <use xlink:href="web/images/sprite/symbol/sprite.svg#5"></use>
-                      </svg>
-                    </div>
-                    <h6 class="g-title">Экспертиза качества<br>медицинской помощи</h6>
-                  </div>
-                  <div class="myServices__elem-right-small">
-                    <h4 class="g-title rub">1100</h4>
-                    <button class="g-btn">Редакитировать</button>
-                  </div>
-                </div>
-                <div class="myServices__elem-center">
-                  <div class="myServices__elem-center-el"><img class="img" src="./web/images/content/myServices/doc.png" alt=""></div>
-                  <div class="myServices__elem-center-body">
-                    <h6 class="g-title">Иванова Татьяна Владимировна</h6>
-                    <p>Комментрий:<span>  Проведение экспертных мероприятий, участие в судебном заседании. </span></p>
-                    <p>Дата приема: <span class="bold"> 15.12.2020</span></p>
-                  </div>
-                </div>
-                <div class="myServices__elem-right">
-                  <h4 class="g-title rub">1100</h4>
-                  <button class="g-btn">Редакитировать</button>
-                </div>
-              </div>
-            </form>
           </div>
         </section>
       </div>

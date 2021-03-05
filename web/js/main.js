@@ -655,7 +655,7 @@ document.addEventListener('DOMContentLoaded', function () {
           if (fillingType) {
             fillingType.addEventListener('change', function (e) {
               if (e.target.value == 2) {
-                numberOfRecords.innerHTML = "\n\t\t\t\t\t\t\t\t\t<option value='15'>15</option>\n\t\t\t\t\t\t\t\t\t<option value='35'>35</option>\n\t\t\t\t\t\t\t\t\t<option value='60'>60</option>\n\t\t\t\t\t\t\t\t\t<option value='85'>85</option>\n\t\t\t\t\t\t\t\t\t<option value='\u041D\u0435 \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u043E'>\u041D\u0435 \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u043E</option>\n\t\t\t\t\t\t\t\t";
+                numberOfRecords.innerHTML = "\n\t\t\t\t\t\t\t\t\t<option value='15'>- 15</option>\n\t\t\t\t\t\t\t\t\t<option value='35'>- 35</option>\n\t\t\t\t\t\t\t\t\t<option value='60'>- 60</option>\n\t\t\t\t\t\t\t\t\t<option value='85'>- 85</option>\n\t\t\t\t\t\t\t\t\t<option value='\u041D\u0435 \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u043E'>\u041D\u0435 \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u043E</option>\n\t\t\t\t\t\t\t\t";
               } else {
                 numberOfRecords.innerHTML = "\n\t\t\t\t\t\t\t\t\t<option value='\u041D\u0435 \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u043E'>\u041D\u0435 \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u043E</option>\n\t\t\t\t\t\t\t";
               }
@@ -772,10 +772,32 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
   var myServiceTypeChange = document.querySelectorAll('.myServiceTypeChange');
+  var myServiceTypeSelect = document.querySelectorAll('.myServiceTypeChange > select');
   var myBtnModalTarget = document.querySelectorAll('.g-table-big1__plus'); // console.log(myServiceTypeChange)
   // console.log(myBtnModalTarget)
 
   if (myServiceTypeChange && myBtnModalTarget) {
+    myServiceTypeSelect.forEach(function (el, i) {
+      if (el.value == 1) {
+        myBtnModalTarget[i].setAttribute('data-btn-modal', 'electronicMedicalRecord');
+      }
+
+      if (el.value == 2) {
+        myBtnModalTarget[i].setAttribute('data-btn-modal', 'doctorAppointment');
+      }
+
+      if (el.value == 3) {
+        myBtnModalTarget[i].setAttribute('data-btn-modal', 'organisationOfMedicalCare');
+      }
+
+      if (el.value == 4) {
+        myBtnModalTarget[i].setAttribute('data-btn-modal', 'healthSpa');
+      }
+
+      if (el.value == 5) {
+        myBtnModalTarget[i].setAttribute('data-btn-modal', 'qualityAssurance');
+      }
+    });
     myServiceTypeChange.forEach(function (el, i) {
       el.addEventListener('change', function (e) {
         // console.log(e.target.value)
